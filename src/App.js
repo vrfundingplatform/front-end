@@ -1,9 +1,14 @@
 import React from "react";
+import "./SASS/index.scss";
+import { Navigation } from "./components/navigation/navigation";
 
-import "./App.css";
-
-function App() {
-  return <h1>Virtual Reality Funding Platform</h1>;
-}
+const App = () => {
+  return (
+    <div>
+      <h1>Virtual Reality Funding Platform</h1>
+      <Navigation />
+    </div>
+  );
+};
 
 export default App;
