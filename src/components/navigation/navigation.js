@@ -1,6 +1,10 @@
 import React from "react";
 import logo from "../../sixrNav.png";
-import { Link, Route } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import SignIn from "./signin";
+import SignUp from "./signup";
+import Home from "./home";
+import Reset from "./reset";
 
 export const Navigation = () => {
   return (
@@ -9,15 +13,16 @@ export const Navigation = () => {
         <img src={logo} alt="sixr company logo" />
       </div>
       <nav>
-        <Link to="/">Dashboard</Link>
+        <Link to="/">Explore</Link>
         <Link to="/sign-in">Sign in</Link>
         <Link to="/sign-up">Start Funding</Link>
       </nav>
-      <Route exact path="/">
-        Hello from the Dash
-      </Route>
-      <Route path="/sign-in">Hello from sign in</Route>
-      <Route path="/sign-up">Sign Up</Route>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/sign-in" component={SignIn} />
+        <Route path="/sign-up" component={SignUp} />
+        <Route path="/reset" component={Reset} />
+      </Switch>
     </>
   );
 };
