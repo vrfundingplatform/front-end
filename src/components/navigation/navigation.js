@@ -10,7 +10,9 @@ export const Navigation = () => {
   return (
     <>
       <div className="nav-logo">
-        <img src={logo} alt="sixr company logo" />
+        <Link to="/">
+          <img id="image" src={logo} alt="sixr company logo" />
+        </Link>
       </div>
       <nav>
         <Link to="/">Explore</Link>
