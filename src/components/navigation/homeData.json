@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Abebi",
+    "role": "Computer Scientist",
+    "img": "https://images.unsplash.com/photo-1508215302842-8a015a452a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
+    "description": "Abebi is a freshmen at Seattle Central College who is working to get her AAs in computer science. She enjoys the creative freedom of the computer science field and began exploring this journey in her Junior year of high school. Currently she is a Future Founder VR fellow learning to develop software for Virtual Reality. Abebi hopes to use technology to help her community and people.",
+    "id": 1
+  },
+  {
+    "name": "Kathryn Shaw",
+    "role": "Vitrual Reality Developer",
+    "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    "description": "Kathryn is a User Experience designer and Virtual Reality developer. She is passionate about creating value-centered solutions to promote health, wellbeing, and productivity. She is currently an administrator for Rojas Plastering LLC, and a fellow at the Future Founders VR Fellowship. After the fellowship, Kathryn seeks to work as a UX and VR Designer and explore the ethics of immersive technologies.",
+    "id": 2
+  },
+  {
+    "name": "David Peyton",
+    "role": "Creative Director",
+    "img": "https://images.unsplash.com/photo-1549920867-1629df28cdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    "description": "David Peyton is a self-taught web developer and current Future Founder VR fellow. He began teaching himself web development in the beginning of 2018 and in less than a year he has developed 9 websites. David is passionate about technology because it allows him to be creative and produce concrete results. He is hoping to find a software development job with opportunities for growth.",
+    "id": 3
+  }
+]
