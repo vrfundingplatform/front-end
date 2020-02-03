@@ -1,6 +1,7 @@
 #image {
   height: 80px;
   width: 350px;
+  margin-top:3%;
 }
 
 #home-image {
@@ -121,4 +122,24 @@
 }
 #story-4 {
   border-bottom: 3px solid rgb(85, 178, 73);
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+.nav-links{
+  width:70%;
+  display:flex;
+  justify-content: space-evenly;
+  margin-top:2%;
+  
+  }
+
+nav a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
 }
