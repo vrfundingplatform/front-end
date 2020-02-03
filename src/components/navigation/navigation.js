@@ -5,6 +5,7 @@ import SignIn from "./signin";
 import SignUp from "./signup";
 import Home from "./home";
 import Reset from "./reset";
+import Project from "./project";
 
 export const Navigation = () => {
   return (
@@ -26,6 +27,7 @@ export const Navigation = () => {
         <Route path="/sign-in" component={SignIn} />
         <Route path="/sign-up" component={SignUp} />
         <Route path="/reset" component={Reset} />
+        <Route path="/project" component={Project} />
       </Switch>
     </>
   );
