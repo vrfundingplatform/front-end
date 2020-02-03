@@ -1,11 +1,17 @@
 import React from "react";
 
-const SignUp = () => {
-return(
+const SignUpForm = () => {
+
+
+
+
+
+
+
+
+    return(
     <form className="form-content">
-        <div>
-            <h1>Sign Up</h1>
-        </div>
+       
         <div>
         {/* USERNAME FIELD */}
         <label htmlFor="username">
@@ -52,12 +58,13 @@ return(
 
         <div>
             <p>Already have an account?</p>
-            <button>Sign In</button>
-        </div>
+            </div>
+        
+        <div><button>Sign In</button></div>
     </form>
 )
 
 
 }
 
-export default SignUp;
+export default SignUpForm;
