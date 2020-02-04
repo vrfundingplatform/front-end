@@ -6,6 +6,7 @@ import SignUp from "./signup";
 import Home from "./home";
 import Reset from "./reset";
 import Project from "./project";
+import Settings from "./settings"
 
 export const Navigation = () => {
   return (
@@ -28,6 +29,7 @@ export const Navigation = () => {
         <Route path="/sign-up" component={SignUp} />
         <Route path="/reset" component={Reset} />
         <Route path="/project" component={Project} />
+        <Route path="/settings" component={Settings} />
       </Switch>
     </>
   );
