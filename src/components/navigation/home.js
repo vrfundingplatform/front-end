@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import data from "./homeData.json";
 import HomeCard from "./homeCard";
+import Fundraise from "./homeFund";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
           return <HomeCard info={info} key={info.id} />;
         })}
       </div>
+      <Fundraise />
     </>
   );
 };
