@@ -5,6 +5,8 @@ import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import MobileScreenShareIcon from "@material-ui/icons/MobileScreenShare";
 import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
+import { NavLink } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 const Fundraise = () => {
   return (
@@ -30,7 +32,7 @@ const Fundraise = () => {
               <h3 className="fund-card-header">0% platform fee</h3>
             </div>
             <p className="fund-card-p">
-              With a <span className="fee">0% platform fee</span> , you get to
+              With a <span className="fee">0% platform fee</span>, you get to
               keep even more of your money.
             </p>
           </div>
@@ -76,6 +78,13 @@ const Fundraise = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="fund-join">
+        <Button variant="contained" id="home-button">
+          <NavLink id="home-link" to="/sign-up">
+            Start Funding
+          </NavLink>
+        </Button>
       </div>
     </div>
   );
