@@ -8,7 +8,9 @@ const SignIn = () => {
       <div className="form-container">
         <div className="form-content">
           <h1 className="form-content-title">Sign in</h1>
+          
           <SignInForm/>
+          
           <div className="options">
             <Link to="/reset">Forgot your password?</Link>
             <div className="redirect">

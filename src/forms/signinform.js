@@ -7,13 +7,13 @@ return(
 
     <form>
             <div>
-              <input type="text" name="text" placeholder="username" required />
+              <input type="text" name="text" placeholder="Username" required />
             </div>
             <div>
               <input
                 type="password"
                 name="password"
-                placeholder="password"
+                placeholder="Password"
                 required
               />
             </div>
