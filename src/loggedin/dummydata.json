@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "name": "Abebi",
+      "title": "VR Headphones",
+      "img": "https://images.pexels.com/photos/373905/pexels-photo-373905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "goal": "$10,000",
+      "description": "Headphones can create a real immesrsion aspect and a pair of VR headphones that are synced to the 3D audio enviroment around them can add an extra layer of immersion!",
+      "profileimg": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "category": "Games"
+      },
+      {
+        "id": 2,
+        "name": "Josh",
+        "title": "VR Reality",
+        "img": "https://images.pexels.com/photos/936575/pexels-photo-936575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "goal": "$2,000",
+        "description": "Headphones can create a real immesrsion aspect and a pair of VR headphones that are synced to the 3D audio enviroment around them can add an extra layer of immersion!",
+        "profileimg": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "category": "Games"
+        },
+        {
+            "id": 3,
+            "name": "Tim",
+            "title": "Simulated Reality",
+            "img": "https://images.pexels.com/photos/1261820/pexels-photo-1261820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "goal": "$1",
+            "description": "Headphones can create a real immesrsion aspect and a pair of VR headphones that are synced to the 3D audio enviroment around them can add an extra layer of immersion!",
+            "profileimg": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "category": "Games"
+            },
+            {
+                "id": 4,
+                "name": "Tammy",
+                "title": "VR Discord",
+                "img": "https://images.pexels.com/photos/3391378/pexels-photo-3391378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "goal": "$10,000",
+                "description": "Headphones can create a real immesrsion aspect and a pair of VR headphones that are synced to the 3D audio enviroment around them can add an extra layer of immersion!",
+                "profileimg": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "category": "Games"
+                },
+                {
+                    "id": 5,
+                    "name": "John",
+                    "title": "VR Headphones",
+                    "img": "https://images.pexels.com/photos/3175979/pexels-photo-3175979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    "goal": "$10,000",
+                    "description": "Headphones can create a real immesrsion aspect and a pair of VR headphones that are synced to the 3D audio enviroment around them can add an extra layer of immersion!",
+                    "profileimg": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    "category": "Games"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Rachel",
+                        "title": "VR Headphones",
+                        "img": "https://images.pexels.com/photos/3183143/pexels-photo-3183143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                        "goal": "$10,000",
+                        "description": "Headphones can create a real immesrsion aspect and a pair of VR headphones that are synced to the 3D audio enviroment around them can add an extra layer of immersion!",
+                        "profileimg": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                        "category": "Games"
+                        }
+      
+   
+    
+  ]
