@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SignInForm from "../../forms/signinform"
 
 const SignIn = () => {
   return (
@@ -7,22 +8,9 @@ const SignIn = () => {
       <div className="form-container">
         <div className="form-content">
           <h1 className="form-content-title">Sign in</h1>
-          <form>
-            <div>
-              <input type="text" name="text" placeholder="username" required />
-            </div>
-            <div>
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                required
-              />
-            </div>
-            <div>
-              <button type="submit">Sign in to SIXR</button>
-            </div>
-          </form>
+          
+          <SignInForm/>
+          
           <div className="options">
             <Link to="/reset">Forgot your password?</Link>
             <div className="redirect">
