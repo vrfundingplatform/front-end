@@ -7,8 +7,8 @@ const Campaign = () => {
 
 return(
     <div>
-        <h1>Finance a Project</h1>
-        <div>
+        <h1 className="dashboard-header">Finance a Project</h1>
+        <div className="campaign-container">
         {dummydata.map(item => {
             return(
             <CampaignCard key={item.id} data={item}/>

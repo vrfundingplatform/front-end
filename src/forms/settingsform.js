@@ -3,29 +3,30 @@ import React from "react";
 const SettingsForm = () => {
 
     return(
-        <div>
-            <form>
+        <div className="form-container">
+            <div className="form-content">
+            <form className="settings">
       
 
-      <input 
+      <input className="settings-input" 
                   name="firstName"
                   type="text"
                   placeholder="First Name"
                   required/>
       
-      <input 
+      <input className="settings-input" 
                   name="lastName"
                   type="text"
                   placeholder="Last Name"
                   required/>
       
-      <input 
+      <input className="settings-input" 
                   name="profilepic"
                   type="file"
                />
       
       
-      <textarea 
+      <textarea className="settings-input" 
                   name="bio"
                  
                   placeholder="Bio"
@@ -35,6 +36,7 @@ const SettingsForm = () => {
       <button type="submit">Update</button>
       
           </form>
+          </div>
         </div>
     )
 }

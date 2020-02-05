@@ -3,12 +3,14 @@ import React from "react";
 const CampaignCard = (props) => {
 console.log(props);
     return(
-    <div>
-        <h3>{props.data.title}</h3>
-        <img src={props.data.img}/>
+    <div className="campaign-card">
+        <h2>{props.data.title}</h2>
+        <img className="campaign-img" src={props.data.img}/>
         <h4>Funding Goal: {props.data.goal}</h4>
-        <img src={props.data.profileimg}/>
-        
+        <div className="campaign-footer">
+        <img className="campaign-pp" src={props.data.profileimg}/>
+        <button className="campaign-button">Explore Project</button>
+        </div>
     </div>
 )
 
