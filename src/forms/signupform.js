@@ -1,48 +1,50 @@
 import React from "react";
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const SignUpForm = () => {
   return (
     <form className="form-content">
-      <div>
+      <div className="field">
         {/* USERNAME FIELD */}
         <label htmlFor="username">
-          <input
-            id="username"
-            type="text"
-            name="username"
-            placeholder="Username"
+          <TextField
             required
+            id="outlined-required"
+            label="Username"
+            defaultValue=""
+            variant="outlined"
           />
         </label>
       </div>
 
-      <div>
+      <div className="field">
         {/* EMAIL FIELD */}
         <label htmlFor="email">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Email"
+          <TextField
             required
+            id="outlined-required"
+            label="Email"
+            defaultValue=""
+            variant="outlined"
           />
         </label>
       </div>
 
-      <div>
+      <div className="field">
         {/* PASSWORD FIELD */}
         <label htmlFor="password">
-          <input
-            id="password"
+          <TextField
+            id="outlined-password-input"
+            label="Password"
             type="password"
-            name="password"
-            placeholder="Password"
-            required
+            autoComplete="current-password"
+            variant="outlined"
           />
         </label>
       </div>
-      <div>
-        <button type="submit">Get Started</button>
+      <div className="field">
+        <Button variant="contained" color="secondary" type="submit">Get Started</Button>
       </div>
     </form>
   );

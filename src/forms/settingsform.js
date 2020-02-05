@@ -1,5 +1,7 @@
 import React from "react";
-
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 const SettingsForm = () => {
 
     return(
@@ -8,33 +10,51 @@ const SettingsForm = () => {
             <form className="settings">
       
 
-      <input className="settings-input" 
-                  name="firstName"
-                  type="text"
-                  placeholder="First Name"
-                  required/>
+     <div className="settings-input">
+      <TextField
+                  required
+                  id="outlined-required"
+                  label="First Name"
+                  defaultValue=""
+                  variant="outlined"/>
+      </div> 
       
-      <input className="settings-input" 
-                  name="lastName"
-                  type="text"
-                  placeholder="Last Name"
-                  required/>
+      <div className="settings-input">
+      <TextField  
+                  required
+                  id="outlined-required"
+                  label="Last Name"
+                  defaultValue=""
+                  variant="outlined"/>
+      </div>
       
-      <input className="settings-input" 
-                  name="profilepic"
-                  type="file"
-               />
+      <div className="settings-input">
+            <Button
+            
+             variant="contained"
+             color="default"
+            type="file"
+             startIcon={<CloudUploadIcon />}
+            >
+            Upload
+            </Button>
+      </div>
       
-      
-      <textarea className="settings-input" 
-                  name="bio"
-                 
-                  placeholder="Bio"
-                  required/>
-      
-                  
-      <button type="submit">Update</button>
-      
+      <div className="settings-input">
+      <TextField 
+                  required
+                  id="outlined-multiline-static"
+                  label="Bio"
+                  multiline
+                  rows="4"
+                  defaultValue=""
+                  variant="outlined"
+                  />
+      </div>
+
+       <div className="settings-input">          
+      <Button variant="contained" color="secondary" type="submit">Update</Button>
+      </div> 
           </form>
           </div>
         </div>

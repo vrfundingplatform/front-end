@@ -7,8 +7,8 @@ import {Dashboard} from "./loggedin/dashboard";
 const App = () => {
   return (
     <div>
-      {/* <Navigation /> */}
-      <Dashboard/>
+      <Navigation />
+      {/* <Dashboard/> */}
     </div>
   );
 };

@@ -200,13 +200,15 @@ nav a {
 .project-input-one {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
+  
 }
 
 .project-input-two {
   display: flex;
   justify-content: center;
   margin-bottom: 4%;
+  
 }
 
 .project-input-three {
@@ -264,18 +266,18 @@ nav a {
 
   .campaign-footer{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
    
   }
 
   .campaign-button{
-    width: 10rem;
-    height: 3rem;
-    background-color: rgb(85, 178, 73);
-    margin-top:4%;
-    border-radius:5%;
-    font-weight: bold;
-    font-size:0.9rem;
+  height:30%;
+  }
+
+  .campaign-title{
+    font-size: 1.8rem;
+    margin-bottom:8%;
   }
 
   .dashboard-header{
@@ -293,6 +295,46 @@ nav a {
   }
 
   .settings-input{
-    margin:8% 0%;
+    margin:10% 0%;
     
+    
+  }
+
+  .project-input-row-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10%;
+  }
+
+  .description-input{
+    width:100%;
+  }
+
+  .select-input{
+    display: flex;
+    justify-content: center;
+    margin:8% 0%;
+  }
+
+  .radio-input{
+    margin-bottom:5%;
+    display:flex;
+    justify-content: center;
+  }
+
+  .form{
+    width:110%;
+  }
+
+  .field{
+    margin:3% 0%;
+  }
+
+  .redirect{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%;
   }

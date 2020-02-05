@@ -1,24 +1,34 @@
 import React from "react";
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
 
 const SignInForm = () => {
 
 return(
 
 
-    <form>
-            <div>
-              <input type="text" name="text" placeholder="Username" required />
+    <form className="form-content">
+            <div className="field">
+              <TextField 
+              required
+              id="outlined-required"
+              label="Username"
+              defaultValue=""
+              variant="outlined" />
             </div>
-            <div>
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
+            <div className="field">
+              <TextField
                 required
+                id="outlined-password-input"
+                label="Password"
+                type="password"
+                autoComplete="current-password"
+                variant="outlined"
               />
             </div>
-            <div>
-              <button type="submit">Sign in to SIXR</button>
+            <div className="field">
+              <Button variant="contained" color="secondary" type="submit">Sign in to SIXR</Button>
             </div>
           </form>
 )

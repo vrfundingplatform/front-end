@@ -1,22 +1,29 @@
 import React from "react";
-
-
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Radio from '@material-ui/core/Radio';
 const ProjectForm = () => {
 
 
     return(
        
         
-        <form>
+        <form className="form">
            {/* Name Input */}
        <div className="project-input-one">
         <label htmlFor="name">
-            <input 
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Name"
+            <TextField 
             required
+            id="outlined-required"
+            label="Name"
+            defaultValue=""
+            variant="outlined"
+           
             />
 
         </label>
@@ -26,27 +33,28 @@ const ProjectForm = () => {
      
         {/* Title Input */}
         <label htmlFor="title">
-            <input 
-            id="title"
-            type="text"
-            name="title"
-            placeholder="Project Title"
+            <TextField 
             required
+            id="outlined-required"
+            label="Project Title"
+            defaultValue=""
+            variant="outlined"
             />
 
         </label>
       </div>
 
       {/* Image File */}
-        <div>
+        <div className="project-input-row-two">
         <label htmlFor="image">
-            <input 
-            id="image"
+            <Button
+             variant="contained"
+             color="default"
             type="file"
-            name="image"
-            
-            required
-            />
+             startIcon={<CloudUploadIcon />}
+            >
+            Upload
+            </Button>
 
         </label>
        
@@ -54,12 +62,12 @@ const ProjectForm = () => {
        
        {/* Funding Goal Inout */}
         <label htmlFor="goal">
-            <input 
-            id="goal"
-            type="text"
-            name="goal"
-            placeholder="Funding Goal"
+            <TextField
             required
+            id="outlined-required"
+            label="Funding Goal"
+            defaultValue=""
+            variant="outlined"
             />
 
         </label>
@@ -69,61 +77,73 @@ const ProjectForm = () => {
         {/* Description Input */}
        <div className="project-input-two">
         <label htmlFor="description">
-            <textarea 
-            id="description"
-            
-            name="description"
-            placeholder="Project Description"
+            <TextField 
             required
+            id="outlined-multiline-static"
+            label="Description"
+            multiline
+            rows="4"
+            
+            defaultValue=""
+            variant="outlined"
             />
 
         </label>
       </div>
-      {/* Category Select */}
-      <label className="project-input-five">Project Category
-      <select>
-  <option value=""></option>
-  <option value="">Games</option>
-  <option value="">Training</option>
-  <option value=""></option>
-  </select>
-</label>
 
-        {/* Radio Fields */}
-    <div className="project-input-three">
+
+<div className="select-input">
+<InputLabel  id="demo-simple-select-required-label">Category</InputLabel>
+        <Select
+          labelId="demo-simple-select-required-label"
+          id="demo-simple-select-required"
+        //   value={age}
+        //   onChange={handleChange}
+        //   className={classes.selectEmpty}
+        >
+          <MenuItem  value="">
+            <em>None</em>
+          </MenuItem>
+          <MenuItem value={1}>Games</MenuItem>
+          <MenuItem value={2}>Health</MenuItem>
+          <MenuItem value={3}>Reality</MenuItem>
+        </Select>
        
-            <label>
-            18+
-            <input
-                name="age"
-                type="checkbox"
-                required
-                />
-            </label>
+       </div>
+      
+<div className="radio-input">
+<FormControlLabel
+          required
+          value="18"
+          control={<Radio color="primary" />}
+          label="18+"
+          labelPlacement="start"
+        />
 
-            <label>
-            Back Account
-            <input
-                name="bank"
-                type="checkbox"
-                required
-                />
-            </label>
+<FormControlLabel
+          
+          required
+          value="bank"
+          control={<Radio color="primary" />}
+          label="Bank Account"
+          labelPlacement="start"
+        />
 
-            <label>
-            US Citizen
-            <input
-                name="citizen"
-                type="checkbox"
-                required
-                />
-            </label>
+<FormControlLabel
+          required
+          value="citizen"
+          control={<Radio color="primary" />}
+          label=" U.S. Citizen"
+          labelPlacement="start"
+        />
 
-    </div>
+</div>
+
+
      
 
         <div className="project-input-four">
-            <button>Start Funding!</button>
+            <Button variant="contained" color="secondary" type="submit">Start Funding!</Button>
             </div>
 
 
