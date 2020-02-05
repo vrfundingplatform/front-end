@@ -1,15 +1,16 @@
 import React from "react";
+import Button from '@material-ui/core/Button';
 
 const CampaignCard = (props) => {
 console.log(props);
     return(
     <div className="campaign-card">
-        <h2>{props.data.title}</h2>
+        <h2 className="campaign-title">{props.data.title}</h2>
         <img className="campaign-img" src={props.data.img}/>
         <h4>Funding Goal: {props.data.goal}</h4>
         <div className="campaign-footer">
         <img className="campaign-pp" src={props.data.profileimg}/>
-        <button className="campaign-button">Explore Project</button>
+        <Button variant="contained" color="secondary" className="campaign-button">Explore Project</Button>
         </div>
     </div>
 )
