@@ -4,7 +4,7 @@ import ProjectForm from "../../forms/projectform"
 const Project = () => {
 return(
      <div>
-         <h1>Create a Campaign</h1>
+         <h1 className="dashboard-header">Create a Campaign</h1>
      
      <div className="form-container">
         <div className="form-content">
