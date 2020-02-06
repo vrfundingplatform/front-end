@@ -13,10 +13,10 @@
   border: 0.03px solid gainsboro;
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 5rem auto;
   justify-content: center;
   height: 60vh;
-  width: 75%;
+  width: 45%;
   box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -28,8 +28,12 @@
   align-items: center;
 }
 
+#signin-button {
+  margin: 1rem 0rem;
+}
+
 .form-content-title {
-  border-bottom: 0.5px solid rgb(58, 190, 238);
+  border-bottom: 1.5px solid rgb(230, 26, 104);
   padding: 1rem;
   font-size: 3rem;
 }
@@ -201,14 +205,12 @@ nav a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
-  
 }
 
 .project-input-two {
   display: flex;
   justify-content: center;
   margin-bottom: 4%;
-  
 }
 
 .project-input-three {
@@ -229,112 +231,104 @@ nav a {
   margin-bottom: 4%;
 }
 
-.campaign-card{
-  display:flex;
+.campaign-card {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  width:25%;
+  width: 25%;
   margin: 2% 2%;
   align-items: center;
   padding: 20px;
-  box-shadow: 
-       inset 0 -3em 3em rgba(0,0,0,0.1), 
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
-  }
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
 
-  .campaign-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:1% 1%;
-    margin: 1% 1%;
-  }
+.campaign-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1% 1%;
+  margin: 1% 1%;
+}
 
-  .campaign-img{
-    width:100%;
-    height:33vh;
-    
-  }
+.campaign-img {
+  width: 100%;
+  height: 33vh;
+}
 
-  .campaign-pp{
-    width:15%;
-    height:7vh;
-    border-radius: 50%;
-    
-  }
+.campaign-pp {
+  width: 15%;
+  height: 7vh;
+  border-radius: 50%;
+}
 
-  .campaign-footer{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-   
-  }
+.campaign-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .campaign-button{
-  height:30%;
-  }
+.campaign-button {
+  height: 30%;
+}
 
-  .campaign-title{
-    font-size: 1.8rem;
-    margin-bottom:8%;
-  }
+.campaign-title {
+  font-size: 1.8rem;
+  margin-bottom: 8%;
+}
 
-  .dashboard-header{
-    display:flex;
-    justify-content: center;
-    margin-top:5%;
-    font-size: 5.0rem;
-  }
+.dashboard-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 5rem;
+}
 
-  .settings{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .settings-input{
-    margin:10% 0%;
-    
-    
-  }
+.settings-input {
+  margin: 10% 0%;
+}
 
-  .project-input-row-two{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:10%;
-  }
+.project-input-row-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10%;
+}
 
-  .description-input{
-    width:100%;
-  }
+.description-input {
+  width: 100%;
+}
 
-  .select-input{
-    display: flex;
-    justify-content: center;
-    margin:8% 0%;
-  }
+.select-input {
+  display: flex;
+  justify-content: center;
+  margin: 8% 0%;
+}
 
-  .radio-input{
-    margin-bottom:5%;
-    display:flex;
-    justify-content: center;
-  }
+.radio-input {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
 
-  .form{
-    width:110%;
-  }
+.form {
+  width: 110%;
+}
 
-  .field{
-    margin:3% 0%;
-  }
+.field {
+  margin: 3% 0%;
+}
 
-  .redirect{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:10%;
-  }
+.redirect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
