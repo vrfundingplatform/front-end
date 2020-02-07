@@ -92,6 +92,7 @@ const SignUpForm = props => {
               value={userData.email}
               onChange={handleChanges}
               variant="outlined"
+              type="email"
             />
           </label>
         </div>
