@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import Radio from "@material-ui/core/Radio";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import axios from "axios";
 
 const SignUpForm = props => {
   const [userData, setUserData] = useState({
     username: "",
+    password: "",
     email: "",
-    password: ""
+    firstname: "",
+    lastname: "",
+    country: "Null",
+    bankacct: false,
+    age: false
   });
 
   const handleChanges = e => {
@@ -25,7 +32,7 @@ const SignUpForm = props => {
       .then(res => {
         console.log("api response", res.data);
         console.log("props", props);
-        localStorage.setItem("token");
+        // localStorage.setItem("token", );
       })
       .catch(err => {
         console.log("submit error", err);
@@ -36,53 +43,85 @@ const SignUpForm = props => {
     <form className="form-content" onSubmit={handleSubmit}>
       <div className="field">
         {/* USERNAME FIELD */}
-        <label htmlFor="username">
+        <div className="signup">
           <TextField
             required
             id="outlined-required"
-            label="Username"
-            name="username"
-            value={userData.username}
+            label="firstname"
+            name="firstname"
+            value={userData.firstname}
             onChange={handleChanges}
             variant="outlined"
           />
-        </label>
-      </div>
+        </div>
 
-      <div className="field">
-        {/* EMAIL FIELD */}
-        <label htmlFor="email">
+        <div className="signup">
           <TextField
             required
             id="outlined-required"
-            label="Email"
-            name="email"
-            value={userData.email}
+            label="lastname"
+            name="lastname"
+            value={userData.lastname}
             onChange={handleChanges}
             variant="outlined"
           />
-        </label>
-      </div>
+        </div>
 
-      <div className="field">
-        {/* PASSWORD FIELD */}
-        <label htmlFor="password">
-          <TextField
-            id="outlined-password-input"
-            label="Password"
-            type="password"
-            name="password"
-            value={userData.password}
-            onChange={handleChanges}
-            autoComplete="current-password"
-            variant="outlined"
-          />
-        </label>
-      </div>
-      <div className="field">
-        <Button variant="contained" color="secondary" type="submit">
-          Get Started
-        </Button>
+        <div className="signup">
+          <label htmlFor="username">
+            <TextField
+              required
+              id="outlined-required"
+              label="Username"
+              name="username"
+              value={userData.username}
+              onChange={handleChanges}
+              variant="outlined"
+            />
+          </label>
+        </div>
+
+        <div className="signup">
+          {/* EMAIL FIELD */}
+          <label htmlFor="email">
+            <TextField
+              required
+              id="outlined-required"
+              label="Email"
+              name="email"
+              value={userData.email}
+              onChange={handleChanges}
+              variant="outlined"
+            />
+          </label>
+        </div>
+
+        <div className="signup">
+          {/* PASSWORD FIELD */}
+          <label htmlFor="password">
+            <TextField
+              required
+              id="outlined-password-input"
+              label="Password"
+              type="password"
+              name="password"
+              value={userData.password}
+              onChange={handleChanges}
+              autoComplete="current-password"
+              variant="outlined"
+            />
+          </label>
+        </div>
+        <div className="signup">
+          <Button
+            id="signup-button"
+            variant="contained"
+            color="secondary"
+            type="submit"
+          >
+            Get Started
+          </Button>
+        </div>
       </div>
     </form>
   );

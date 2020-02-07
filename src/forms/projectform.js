@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
@@ -7,47 +7,96 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Radio from "@material-ui/core/Radio";
-const ProjectForm = () => {
+import axios from "axios";
+
+const ProjectForm = props => {
+  const [projectData, setProjectData] = useState({
+    users_projectid: 1,
+    title: "",
+    cta: "",
+    category: "",
+    goal: "",
+    desc: "",
+    primaryPic: "",
+    status: "Active",
+    startDate: "today",
+    endDate: "tomorrow",
+    subcategory: "vr"
+  });
+
+  const handleChanges = e => {
+    setProjectData({
+      ...projectData,
+      [e.target.name]: e.target.value
+    });
+    console.log("handleChanges from Project Sumbit", projectData);
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    let auth = localStorage.getItem("token");
+    console.log("auth token", auth);
+    axios
+      .post("https://vrfunding.herokuapp.com/projects", projectData, {
+        headers: { authorization: auth }
+      })
+      .then(res => {
+        console.log("api project response", res.data.projectData);
+        console.log("project props", props);
+        // localStorage.setItem("token", );
+      })
+      .catch(err => {
+        console.log("submit error", err.response);
+      });
+  };
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       {/* Name Input */}
       <div className="project-input-one">
-        <label htmlFor="name">
+        <label htmlFor="title">
           <TextField
             required
             id="outlined-required"
-            label="Name"
+            label="Project Title"
+            name="title"
+            value={projectData.title}
+            onChange={handleChanges}
+            defaultValue=""
+            variant="outlined"
+          />
+        </label>
+        <label htmlFor="cta">
+          <TextField
+            required
+            id="outlined-required"
+            label="Subtitle"
+            name="cta"
+            value={projectData.cta}
+            onChange={handleChanges}
             defaultValue=""
             variant="outlined"
           />
         </label>
 
         {/* Title Input */}
-        <label htmlFor="title">
+      </div>
+
+      {/* Image File */}
+      <div className="project-input-one">
+        {/* Funding Goal Inout */}
+        <label htmlFor="category">
           <TextField
             required
             id="outlined-required"
-            label="Project Title"
+            label="Project Category"
+            name="category"
+            value={projectData.category}
+            onChange={handleChanges}
             defaultValue=""
             variant="outlined"
           />
         </label>
-      </div>
-
-      {/* Image File */}
-      <div className="project-input-row-two">
-        <label htmlFor="image">
-          <Button
-            variant="contained"
-            color="default"
-            type="file"
-            startIcon={<CloudUploadIcon />}
-          >
-            Upload Image
-          </Button>
-        </label>
-
-        {/* Funding Goal Inout */}
         <label htmlFor="goal">
           <TextField
             required
@@ -55,6 +104,9 @@ const ProjectForm = () => {
             label="Funding Goal"
             defaultValue=""
             variant="outlined"
+            name="goal"
+            value={projectData.goal}
+            onChange={handleChanges}
           />
         </label>
       </div>
@@ -69,11 +121,36 @@ const ProjectForm = () => {
             rows="4"
             defaultValue=""
             variant="outlined"
+            name="desc"
+            value={projectData.desc}
+            onChange={handleChanges}
+          />
+        </label>
+      </div>
+      <div className="image-container">
+        <label htmlFor="image">
+          {/* <Button
+            variant="contained"
+            color="default"
+            type="file"
+            name="primaryPic"
+            startIcon={<CloudUploadIcon />}
+          >
+            Upload Image
+          </Button> */}
+          <TextField
+            name="primaryPic"
+            value={projectData.primaryPic}
+            onChange={handleChanges}
+            id="outlined-required"
+            label="Picture"
+            defaultValue=""
+            variant="outlined"
           />
         </label>
       </div>
 
-      <div className="select-input">
+      {/* <div className="select-input">
         <InputLabel id="demo-simple-select-required-label">Category</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -116,7 +193,7 @@ const ProjectForm = () => {
           label=" U.S. Citizen"
           labelPlacement="start"
         />
-      </div>
+      </div> */}
 
       <div className="project-input-four">
         <Button
