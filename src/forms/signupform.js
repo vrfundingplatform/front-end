@@ -47,7 +47,7 @@ const SignUpForm = props => {
           <TextField
             required
             id="outlined-required"
-            label="firstname"
+            label="Firstname"
             name="firstname"
             value={userData.firstname}
             onChange={handleChanges}
@@ -59,7 +59,7 @@ const SignUpForm = props => {
           <TextField
             required
             id="outlined-required"
-            label="lastname"
+            label="Lastname"
             name="lastname"
             value={userData.lastname}
             onChange={handleChanges}

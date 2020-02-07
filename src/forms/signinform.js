@@ -40,7 +40,7 @@ const SignInForm = props => {
           required
           id="outlined-required"
           name="username"
-          label="username"
+          label="Username"
           value={data.username}
           onChange={handleChanges}
           variant="outlined"
